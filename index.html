@@ -11,6 +11,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Shaina's Weather App</title>
   </head>
@@ -19,10 +20,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Miami, FL</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Tuesday, 4:26</li>
-              <li>Cloudy</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -34,7 +35,7 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong>32</strong
+                  <strong id="temperature">32</strong
                   ><span class="units"
                     >°C | <a href="#" target="_blank">°F</a></span
                   >
@@ -43,9 +44,8 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 10%</li>
-                <li>Humidity: 65%</li>
-                <li>Wind: 4 MPH SE</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/H</li>
               </ul>
             </div>
           </div>
