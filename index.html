@@ -12,11 +12,15 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/303ddf0466.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Shaina's Weather App</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="">
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <form id="search-form" class="mb-3">
@@ -44,7 +48,7 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
+              <li id="subheading">Last updated: <span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -66,7 +70,7 @@
             <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> m/H</li>
+                <li>Wind: <span id="wind"></span> mph</li>
               </ul>
             </div>
           </div>
@@ -75,11 +79,12 @@
         <small>
           <a
             href="https://github.com/borahae13/shays-weather-app"
-            style="text-decoration: none"
+            style="color: #5e41a7"
           >
             Open-source code
           </a>
           by Shaina Carson
+          <i class="fa-brands fa-github"></i>
         </small>
       </div>
     </div>
